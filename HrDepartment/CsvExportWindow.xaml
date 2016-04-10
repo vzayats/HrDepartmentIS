@@ -1,0 +1,31 @@
+﻿<Window x:Class="HrDepartment.CsvExportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Експорт у файл CSV" Height="170.947" Width="645.305" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        FocusManager.FocusedElement="{Binding ElementName=ComboBox}" Icon="Images/CSV-100.png" Closing="CsvExportWindow_Closing">
+    <Grid>
+        <GroupBox Header="Вибір таблиці" HorizontalAlignment="Stretch" Margin="10,5,10,0" VerticalAlignment="Top" Height="89"  >
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" TextWrapping="NoWrap" Text="Оберіть необхідну таблицю з бази даних для експорту у файл CSV:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox" HorizontalAlignment="Stretch" Margin="10,31,10,0" VerticalAlignment="Top" >
+                    <ComboBoxItem Name="Workers"  IsSelected="True">Відомості про працівників</ComboBoxItem>
+                    <ComboBoxItem Name="Department">Підрозділи</ComboBoxItem>
+                    <ComboBoxItem Name="Position">Посади</ComboBoxItem>
+                    <ComboBoxItem Name="WorkBooks">Трудові книги</ComboBoxItem>
+                    <ComboBoxItem Name="Contract">Дані про контракт</ComboBoxItem>
+                    <ComboBoxItem Name="Vacations">Відпустки</ComboBoxItem>
+                    <ComboBoxItem Name="PassportData">Паспортні дані</ComboBoxItem>
+                    <ComboBoxItem Name="Addresses">Адресні дані працівників</ComboBoxItem>
+                    <ComboBoxItem Name="Education">Дані про освіту</ComboBoxItem>
+                    <ComboBoxItem Name="PostGraduate">Дані про післядипломну освіту</ComboBoxItem>
+                    <ComboBoxItem Name="Activity">Активність</ComboBoxItem>
+                    <ComboBoxItem Name="Candidates">Кандидати на вакантні посади</ComboBoxItem>
+                    <ComboBoxItem Name="Family">Члени сім'ї працівників</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+
+        </GroupBox>
+        <Button x:Name="CsvExportButton"  Content="Експорт" HorizontalAlignment="Left" Margin="543,99,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CsvExportButton_Click"/>
+
+    </Grid>
+</Window>

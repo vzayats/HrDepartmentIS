@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Personnel_department" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=vasyl-asus;Initial Catalog=Personnel_department;Integrated Security=True" SettingsObjectName="HrDepartment.Properties.Settings" SettingsPropertyName="Personnel_departmentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Workers" Member="Workers">
+    <Type Name="Worker">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="FamilyStatus" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PositionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EducationID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Worker_Family" Member="Families" ThisKey="ID" OtherKey="WorkerID" Type="Family" />
+      <Association Name="PassportData_Worker" Member="PassportData" ThisKey="ID" OtherKey="ID" Type="PassportData" IsForeignKey="true" />
+      <Association Name="Education_Worker" Member="Education" ThisKey="EducationID" OtherKey="EducationID" Type="Education" IsForeignKey="true" />
+      <Association Name="Contract_Worker" Member="Contract" ThisKey="ID" OtherKey="ID" Type="Contract" IsForeignKey="true" />
+      <Association Name="Address_Worker" Member="Address" ThisKey="ID" OtherKey="ID" Type="Address" IsForeignKey="true" />
+      <Association Name="Military_Worker" Member="Military" ThisKey="ID" OtherKey="WorkerID" Type="Military" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PostGraduate" Member="PostGraduates">
+    <Type Name="PostGraduate">
+      <Column Name="PostGraduateID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PostGraduateInstitution" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="GraduationYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Profession" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EducationForm" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="PostGraduate_Education" Member="Educations" ThisKey="PostGraduateID" OtherKey="PostGraduateID" Type="Education" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PassportData" Member="PassportDatas">
+    <Type Name="PassportData">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxID" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Passport" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="PassportIssueDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Citizenship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Insurance" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ForeignPassport" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="ForeignExpiry" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="PassportData_Worker" Member="Worker" ThisKey="ID" OtherKey="ID" Type="Worker" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Family" Member="Families">
+    <Type Name="Family">
+      <Column Name="WorkerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Relation" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Association Name="Worker_Family" Member="Worker" ThisKey="WorkerID" OtherKey="ID" Type="Worker" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Education" Member="Educations">
+    <Type Name="Education">
+      <Column Name="EducationID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Institution" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="GraduationYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Profession" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="EducationForm" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PostGraduateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Education_Worker" Member="Workers" ThisKey="EducationID" OtherKey="EducationID" Type="Worker" />
+      <Association Name="PostGraduate_Education" Member="PostGraduate" ThisKey="PostGraduateID" OtherKey="PostGraduateID" Type="PostGraduate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contract" Member="Contracts">
+    <Type Name="Contract">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HiringDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DismissDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Probation" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Contract_Worker" Member="Worker" ThisKey="ID" OtherKey="ID" Type="Worker" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Addresses" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ZipCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="Town" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="House" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="Birthplace" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="HomePhone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="MobileNumber" Type="System.String" DbType="NVarChar(18)" CanBeNull="true" />
+      <Column Name="WorkPhone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Association Name="Address_Worker" Member="Worker" ThisKey="ID" OtherKey="ID" Type="Worker" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Military" Member="Militaries">
+    <Type Name="Military">
+      <Column Name="MilitaryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WorkerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountingGroup" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="MilitaryStructure" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumberSpecialties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MilitaryRank" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Suitability" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Ismobilized" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DateOfMobilization" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NameOfMilitary" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="reservations" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Military_Worker" Member="Worker" ThisKey="WorkerID" OtherKey="ID" Type="Worker" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>

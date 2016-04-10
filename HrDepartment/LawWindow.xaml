@@ -1,0 +1,33 @@
+﻿<Window x:Class="HrDepartment.LawWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Довідник нормативних документів" Height="518" Width="970" Icon="Images/Parliament-100.png"  Closing="LawWindow_Closing">
+    <Grid>
+        <GroupBox Header="Вибір документу" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="789" Height="85" FocusManager.FocusedElement="{Binding ElementName=ComboBox}">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" TextWrapping="NoWrap" Text="Оберіть необхідний документ для перегляду:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="757" >
+                    <ComboBoxItem Name="Item1" Selected="Item1_OnSelected">Кодекс законів про працю України (КЗпП)</ComboBoxItem>
+                    <ComboBoxItem Name="Item2" Selected="Item2_OnSelected">Закон України «Про оплату праці»</ComboBoxItem>
+                    <ComboBoxItem Name="Item3" Selected="Item3_OnSelected">Закон України «Про відпустки»</ComboBoxItem>
+                    <ComboBoxItem Name="Item4" Selected="Item4_OnSelected">Закон України «Про військовий обов’язок і військову службу»</ComboBoxItem>
+                    <ComboBoxItem Name="Item5" Selected="Item5_OnSelected">Закон України «Про державну службу»</ComboBoxItem>
+                    <ComboBoxItem Name="Item6" Selected="Item6_OnSelected">Закон України «Про загальнообов’язкове державне пенсійне страхування»</ComboBoxItem>
+                    <ComboBoxItem Name="Item7" Selected="Item7_OnSelected">Закон України «Про загальнообов’язкове державне соціальне страхування на випадок безробіття»</ComboBoxItem>
+                    <ComboBoxItem Name="Item8" Selected="Item8_OnSelected">Закон України «Про зайнятість населення»</ComboBoxItem>
+                    <ComboBoxItem Name="Item9" Selected="Item9_OnSelected">Закон України «Про колективні договори і угоди»</ComboBoxItem>
+                    <ComboBoxItem Name="Item10" Selected="Item10_OnSelected">Закон України «Про пенсійне забезпечення»</ComboBoxItem>
+                    <ComboBoxItem Name="Item11" Selected="Item11_OnSelected">Закон України «Про професійний розвиток працівників»</ComboBoxItem>
+                    <ComboBoxItem Name="Item12" Selected="Item12_OnSelected">Наказ Міністерства фінансів України «Про затвердження Інструкції про службові відрядження в межах України та за кордон»</ComboBoxItem>
+                    <ComboBoxItem Name="Item13" Selected="Item13_OnSelected">Постанова Кабінету Міністрів України «Про затвердження Порядку обчислення середньої заробітної плати»</ComboBoxItem>
+                    <ComboBoxItem Name="Item14" Selected="Item14_OnSelected">Закон України «Про основи соціальної захищеності інвалідів в Україні»</ComboBoxItem>
+                    <ComboBoxItem Name="Item15" Selected="Item15_OnSelected">Закон України «Про державну допомогу сім’ям з дітьми»</ComboBoxItem>
+                    <ComboBoxItem Name="Item16" Selected="Item16_OnSelected">Інструкція про порядок ведення трудових книжок працівників</ComboBoxItem>
+                    <ComboBoxItem Name="Item17" Selected="Item17_OnSelected">Класифікатор професій ДК 003 2010</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+
+        </GroupBox>
+        <DocumentViewer x:Name="DocumentViewer" HorizontalAlignment="Left" Margin="0,95,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="HrDepartment.CalendarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:hrDepartment="clr-namespace:HrDepartment"
+        Title="Виробничий календар" Height="616.366" Width="955.883" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Icon="Images/Calendar-100.png" Closing="CalendarWindow_Closing">
+    <Grid>
+
+        
+        <Grid>
+            <hrDepartment:Example  x:Name="Example" Margin="0,-1,9,0"/>
+        </Grid>
+    </Grid>
+</Window>

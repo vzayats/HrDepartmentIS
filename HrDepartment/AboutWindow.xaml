@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="HrDepartment.AboutWindow"
+        Title="Про програму" Height="264.583" Width="427.333" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Images/About-100.png"
+    Closing="AboutWindow_Closing">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="10,7,10,0" TextAlignment="Center"  TextWrapping="Wrap"   VerticalAlignment="Top" Width="392"><Run FontWeight="Bold" FontSize="14"  Text="Інформаційна система 'Відділ кадрів підприємства'" /><Run Text=" "/><Run FontWeight="Medium"  FontSize="14" Text="'Human Resources Department Information System'" /></TextBlock>
+        <GroupBox Header="Інформація про програму" HorizontalAlignment="Left" Margin="10,52,0,10" VerticalAlignment="Top" Width="392" Height="74">
+            <Grid>
+                <StackPanel>
+                    <TextBlock x:Name="VesionTextBlock" Text="Верія: " TextWrapping="NoWrap" />
+                    <TextBlock x:Name="DateTextBlock" Text="Дата збірки: "  TextWrapping="NoWrap" />
+                    <TextBlock x:Name="CopyrightTextBlock" Text="" TextWrapping="NoWrap" />
+                </StackPanel>
+
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Header="Автор" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="392" Height="58" Margin="10,131,0,0">
+            <Grid>
+                <StackPanel>
+                    <TextBlock Text="Розробник: Заяць В. З." TextWrapping="NoWrap" />
+                    <TextBlock TextWrapping="NoWrap" VerticalAlignment="Center"><Run BaselineAlignment="Center" Text="Зв'язатися з розробником: "/><InlineUIContainer>
+                    		<Button  x:Name="EmailButton" ToolTip="Написати лист" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Width="24" Height="21" Click="EmailButton_Click">
+                    			<StackPanel>
+                    				<Image Source="Images/Mail.png" Height="20" Width="23" />
+                    			</StackPanel>
+                    		</Button>
+                    	</InlineUIContainer><InlineUIContainer>
+                    		<Button  x:Name="FacebookButton" BorderThickness="0" ToolTip="Написати у Facebook" Background="{x:Null}"  Width="20" Height="19" Click="FacebookButton_Click" >
+                    			<Path Data="F1M-1775.32,-68.9708L-1831.47,-68.9708C-1833.27,-68.9708,-1834.73,-67.3745,-1834.73,-65.4058L-1834.73,-10.1649C-1834.73,-8.19482,-1833.27,-6.59973,-1831.47,-6.59973L-1802.47,-6.59973 -1802.47,-32.2261 -1809.5,-32.2261 -1809.5,-40.5503 -1802.47,-40.5503 -1802.47,-45.5282C-1802.47,-50.9435,-1798.08,-55.3315,-1792.66,-55.3315L-1783.74,-55.3315 -1783.74,-47.0099 -1787.86,-47.0099C-1789.89,-47.0099,-1791.53,-45.3667,-1791.53,-43.3407L-1791.53,-40.5503 -1783.74,-40.5503 -1783.74,-32.2261 -1791.53,-32.2261 -1791.53,-6.59973 -1775.32,-6.59973C-1773.52,-6.59973,-1772.06,-8.19482,-1772.06,-10.1649L-1772.06,-65.4058C-1772.06,-67.3745,-1773.52,-68.9708,-1775.32,-68.9708" Stretch="Fill"  Fill="#FF2111B3" Width="17" Height="17" Margin="0,0,0,0"/>
+                    		</Button>
+
+                    	</InlineUIContainer></TextBlock>
+
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="CloseButton" Content="Закрити" ToolTip="Закрити вікно" HorizontalAlignment="Left" Margin="327,194,0,0" VerticalAlignment="Top" Width="77" Height="25" Click="CloseButton_Click"/>
+        <Button x:Name="SystemInfoButton" ToolTip="Відкрити інформацію про систему" Content="Про систему" HorizontalAlignment="Left" Margin="14,194,0,0" VerticalAlignment="Top" Width="77" Height="25" Click="SystemInfoButton_Click"/>
+
+    </Grid>
+</Window>

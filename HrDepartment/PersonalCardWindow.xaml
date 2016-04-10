@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:tr="http://schemas.telerik.com/wpf" x:Class="HrDepartment.PersonalCardWindow"
+         Title="Особова картка" Height="600" Width="1100" WindowStartupLocation="CenterScreen" Icon="Images/Employee Card-96.png"
+    Closing="PersonalCardWindow_Closing">
+    <Grid>
+
+        <tr:ReportViewer x:Name="ReportViewer"  Margin="5,5,5,5   ">
+            <tr:ReportViewer.TextResources>
+                <tr:TextResources  PreviewButtonText="Сформувати"/>
+            </tr:ReportViewer.TextResources>
+        </tr:ReportViewer>
+
+    </Grid>
+</Window>

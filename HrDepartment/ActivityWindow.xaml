@@ -1,0 +1,82 @@
+﻿<Window x:Class="HrDepartment.ActivityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="Інформація про діяльність працівників" Height="700" Width="1140" WindowStartupLocation="CenterScreen" Icon="Images/Week View-96.png"
+        Closing="ActivityWindow_Closing">
+    <Grid>
+        <GroupBox Header="Управління" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="150" Width="133">
+            <Grid>
+                <Button x:Name="AddButton" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="AddButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Add File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Додати" VerticalAlignment="Center" ToolTip="Додати дані про діяльність працівника за місяць"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="UpdateButton"  HorizontalAlignment="Left" Margin="5,53,0,50"    Width="106" Click="UpdateButton_Click"  >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Edit File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Змінити" VerticalAlignment="Center" ToolTip="Внести зміни у відомості про діяльність працівника" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="DeleteButton"  HorizontalAlignment="Left" Margin="5,0,0,10" VerticalAlignment="Bottom"  Width="106" Height="25" Click="DeleteButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Delete File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Видалити" VerticalAlignment="Center" ToolTip="Видалити дані про діяльність працівника за місяць"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Header="Відомості про діяльність працівників" HorizontalAlignment="Stretch" Margin="148,0,5,5" VerticalAlignment="Stretch" >
+            <Grid>
+                <telerik:RadGridView x:Name="ActivityGridView" HorizontalAlignment="Stretch" Margin="5,5,5,24" VerticalAlignment="Stretch" 
+                                IsReadOnly="True" ItemsSource="{Binding Activity}" ShowGroupPanel="False" ColumnWidth="*"   FrozenColumnCount="3" AutoGenerateColumns="False">
+                    <telerik:RadGridView.Columns >
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding ActivityID}" Header="Номер запису про діяльність працівника" Width="Auto" IsVisible="False"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Fia}" Header="ПІБ працівника" Width="*"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding CalendarMonth}" Header="Номер місяця" Width="*" IsVisible="False"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding CalendarMonthName}" Header="Місяць" Width="auto" />
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding CalendarYear}" Header="Рік" Width="auto"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Present}" Header="Присутність" Width="auto"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Absence}" Header="Відсутність" Width="Auto"  />
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Hospital}" Header="Лікарняний" Width="Auto"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Vacation}" Header="Відпустка" Width="Auto"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" Header="ID працівника" Width="Auto" IsVisible="False"/>
+                        
+                    </telerik:RadGridView.Columns>
+                    <telerik:RadGridView.GroupDescriptors>
+                        <telerik:GroupDescriptor Member="CalendarYear"
+                                    SortDirection="Ascending" />
+                        <telerik:GroupDescriptor Member="CalendarMonthName">
+                            <telerik:GroupDescriptor.AggregateFunctions>
+                                <telerik:CountFunction Caption="Кількість записів: " />
+                            </telerik:GroupDescriptor.AggregateFunctions>
+                        </telerik:GroupDescriptor>
+
+                    </telerik:RadGridView.GroupDescriptors>
+                </telerik:RadGridView>
+                <telerik:RadDataPager   Margin="5,0" VerticalAlignment="bottom" Source="{Binding Items, ElementName=ActivityGridView}"
+                	IsTotalItemCountFixed="True"  PageSize="25"  DisplayMode="FirstLastPreviousNextNumeric " />
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Експорт" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="133" Height="118">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="NoWrap" Text="Формат файлу:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox" HorizontalAlignment="Stretch" Margin="5,26,10,0" VerticalAlignment="Top" >
+                    <ComboBoxItem Name="Xlsx" IsSelected="True">Excel (Xlsx)</ComboBoxItem>
+                    <ComboBoxItem Name="Pdf" >Pdf</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="ExportButton" HorizontalAlignment="Left" Margin="5,61,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="ExportButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Export-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Експортувати" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

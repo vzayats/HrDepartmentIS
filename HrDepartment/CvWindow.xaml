@@ -1,0 +1,69 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="HrDepartment.CvWindow"
+        Title="Перегляд нових кандидатів" Height="700" Width="1100" WindowStartupLocation="CenterScreen"
+        Icon="Images/Cv.png" Closing="CvWindow_Closing">
+    <Grid>
+        <GroupBox Header="Управління" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="150" Width="133">
+            <Grid>
+                <Button x:Name="AddButton" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="AddButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Add File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Додати" VerticalAlignment="Center" ToolTip="Додати нового кандидата"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="UpdateButton"  HorizontalAlignment="Left" Margin="5,53,0,50"    Width="106" Click="UpdateButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Edit File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Змінити" VerticalAlignment="Center" ToolTip="Внести зміни в дані про кандидата" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="DeleteButton"  HorizontalAlignment="Left" Margin="5,0,0,10" VerticalAlignment="Bottom"  Width="106" Height="25" Click="DeleteButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Delete File-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Видалити" VerticalAlignment="Center" ToolTip="Видалити кандидата"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Header="Інформація про кандидатів на вакантні посади та їхні резюме" HorizontalAlignment="Stretch" Margin="148,0,5,5" VerticalAlignment="Stretch" >
+            <Grid>
+                <telerik:RadGridView x:Name="CandidatesGridView" HorizontalAlignment="Stretch" Margin="5,5,5,5" VerticalAlignment="Stretch" 
+                                IsReadOnly="True" ItemsSource="{Binding Candidates}" ShowGroupPanel="False" ColumnWidth="*"   FrozenColumnCount="3" AutoGenerateColumns="False">
+                    <telerik:RadGridView.Columns >
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding CvID}" Header="Номер кандидата" Width="Auto" IsVisible="False"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Vacancy}" Header="Назва вакантної посади" Width="*"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding CandidateName}" Header="ПІБ кандидата" Width="*"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding AddDate}" Header="Дата додавання" DataFormatString="{} {0:d}" Width="auto" />
+                        <telerik:GridViewColumn Header="Резюме кандидата">
+                            <telerik:GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <telerik:RadButton Content="Відкрити"  x:Name="OpenButton" Click="OpenButton_Click" />
+                                </DataTemplate>
+                            </telerik:GridViewColumn.CellTemplate>
+                        </telerik:GridViewColumn>
+                    </telerik:RadGridView.Columns>
+                </telerik:RadGridView>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Експорт" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="133" Height="118">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="NoWrap" Text="Формат файлу:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox" HorizontalAlignment="Stretch" Margin="5,26,10,0" VerticalAlignment="Top" >
+                    <ComboBoxItem Name="Xlsx" IsSelected="True">Excel (Xlsx)</ComboBoxItem>
+                    <ComboBoxItem Name="Pdf" >Pdf</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="ExportButton" HorizontalAlignment="Left" Margin="5,61,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="ExportButton_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Export-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Експортувати" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

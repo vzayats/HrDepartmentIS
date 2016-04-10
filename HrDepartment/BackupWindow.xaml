@@ -1,0 +1,19 @@
+﻿<Window x:Class="HrDepartment.BackupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Резервне копіювання" Height="137.496" Width="534.319" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" 
+        FocusManager.FocusedElement="{Binding ElementName=BrowseButton}" Icon="Images/Data Backup Filled-100.png"  Closing="BackupWindow_Closing">
+    <Grid>
+        <GroupBox Header="Резервне копіювання" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="62" Width="500">
+            <Grid>
+                <Label Content="Місце збереження:" HorizontalAlignment="Left" Margin="-1,7,0,0" RenderTransformOrigin="0.933,-2.167" VerticalAlignment="Top" Height="27"/>
+                <TextBox x:Name="PathTextBox" HorizontalAlignment="Left" Height="23" Margin="115,9,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="283"/>
+                <Button x:Name="BrowseButton" Content="Обрати" HorizontalAlignment="Left" Margin="403,8,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="BrowseButton_Click"/>
+            </Grid>
+        </GroupBox>
+
+        <Button x:Name="CreateButton" Content="Створити" HorizontalAlignment="Left" Margin="434,67,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CreateButton_Click"/>
+        <Button x:Name="CLoseButton" Content="Закрити" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CLoseButton_Click" RenderTransformOrigin="0.187,0.609"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+﻿<Window x:Class="HrDepartment.AddEditVacationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="" Height="280.667" Width="377.167" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" 
+        Icon="Images/Beach-96.png" Closing="AddEditVacationWindow_Closing">
+    <Grid Height="254" VerticalAlignment="Top" Margin="0,0,0,-2">
+        <GroupBox Header="Інформація про відпустку працівника" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="341" Height="193">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="ПІБ працівника:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="FiaComboBox" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="302" ItemsSource="{Binding}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="NoWrap" Text="Дата початку відпустки:" VerticalAlignment="Top"/>
+
+                <telerik:RadDatePicker x:Name="DateOfStart" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="179,112,0,0" VerticalAlignment="Top" Width="133"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,142,0,0" TextWrapping="NoWrap" Text="Дата закінчення відпустки:" VerticalAlignment="Top"/>
+                <telerik:RadDatePicker x:Name="DateOfEnd" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="179,139,0,0" VerticalAlignment="Top" Width="133"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,58,0,0" TextWrapping="NoWrap" Text="Тип відпустки:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="TypeVacationComboBox" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="302">
+                    <ComboBoxItem Name="Item1"  IsSelected="True">Основна щорічна відпустка</ComboBoxItem>
+                    <ComboBoxItem Name="Item2">Щорічна додаткова відпустка</ComboBoxItem>
+                    <ComboBoxItem Name="Item3">Відпустка у зв'язку з вагітністю і пологами</ComboBoxItem>
+                    <ComboBoxItem Name="Item4">Відпустка для догляду за дитиною</ComboBoxItem>
+                    <ComboBoxItem Name="Item5">Додаткова відпустка без збереження з/п</ComboBoxItem>
+                    <ComboBoxItem Name="Item6">Додаткова відпустка у зв'язку з навчанням</ComboBoxItem>
+                    <ComboBoxItem Name="Item7">Творча відпустка</ComboBoxItem>
+                    <ComboBoxItem Name="Item8">Додаткова відпустка, передбачена ст.20,21,30</ComboBoxItem>
+                    <ComboBoxItem Name="Item9">Додаткова оплачувана відпустка (ст.19)</ComboBoxItem>
+                    <ComboBoxItem Name="Item10">Відпустка без збереження з/п (ст.26)</ComboBoxItem>
+                    <ComboBoxItem Name="Item11">Інша відпустка без збереження з/п</ComboBoxItem>   
+                </ComboBox>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="AddButton" Content="Додати" HorizontalAlignment="Left" Margin="276,208,0,0" VerticalAlignment="Top" Width="75" Height="25"  Visibility="Hidden" Click="AddButton_Click"/>
+        <Button x:Name="ChangeButton" Content="Змінити" HorizontalAlignment="Left" Margin="276,208,0,0" VerticalAlignment="Top" Width="76" Height="25" Visibility="Hidden" Click="ChangeButton_Click" />
+    </Grid>
+</Window>

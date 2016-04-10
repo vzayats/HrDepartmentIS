@@ -1,0 +1,60 @@
+﻿<Window x:Class="HrDepartment.StatisticsWorkerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="Статистика по кожному працівнику" Height="600" Width="1100" WindowStartupLocation="CenterScreen" 
+    Icon="Images/Positive Dynamic-96.png" Closing="StatisticsWorkerWindow_Closing">
+    <Grid>
+        <GroupBox Header="Опції" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Height="222" Width="261">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="11,61,0,0" TextWrapping="NoWrap" Text="Рік:" VerticalAlignment="Top"/>
+
+                <telerik:RadNumericUpDown x:Name="NumericUpDown" HorizontalAlignment="Left" Margin="99,58,0,0" VerticalAlignment="Top" Width="143" IsEditable="True" Minimum="2010" Maximum="2050" Value="2015" 
+                                          HideTrailingZeros="True" />
+                <TextBlock HorizontalAlignment="Left" Margin="11,85,0,0" TextWrapping="NoWrap" Text="Оберіть критерій діяльності:" VerticalAlignment="Top" Width="187"/>
+                <ComboBox x:Name="CriteriaComboBox" HorizontalAlignment="Left" Margin="11,106,0,0" VerticalAlignment="Top" Width="231">
+                    <ComboBoxItem Name="Present" IsSelected="True">Присутність</ComboBoxItem>
+                    <ComboBoxItem Name="Absence">Відсутність</ComboBoxItem>
+                    <ComboBoxItem Name="Hospital">Лікарняний</ComboBoxItem>
+                    <ComboBoxItem Name="Vacation">Відпустка</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="CreateButton" Content="Вивести" HorizontalAlignment="Left" Margin="167,133,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CreateButton_OnClick"/>
+                <Separator Name="Separator1" Margin="11,163,9,32" RenderTransformOrigin="0.506,0.373" />
+                <Button x:Name="CloseButton" Content="Закрити" HorizontalAlignment="Left" Margin="167,173,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CloseButton_OnClick"/>
+                <TextBlock HorizontalAlignment="Left" Margin="11,10,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="71"><Run Text="Працівник"/><Run Text=":"/></TextBlock>
+                <ComboBox x:Name="FiaComboBox" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="232" ItemsSource="{Binding}"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Експорт" HorizontalAlignment="Left" Margin="5,227,0,0" VerticalAlignment="Top" Width="261" Height="105">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="NoWrap" Text="Формат файлу:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox" HorizontalAlignment="Stretch" Margin="5,26,10,0" VerticalAlignment="Top" >
+                    <ComboBoxItem Name="Png" IsSelected="True">Png</ComboBoxItem>
+                    <ComboBoxItem Name="ExcelMl" >ExcelMl</ComboBoxItem>
+                    <ComboBoxItem Name="Xps">Xps</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="ExportButton" HorizontalAlignment="Left" Margin="133,53,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="ExportButton_OnClick">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/Export-96.png" Width="20" Height="20"/>
+                        <TextBlock Text="Експортувати" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+        </GroupBox>
+        <telerik:RadChart x:Name="Chart" Content="" HorizontalAlignment="Left" Margin="271,5,0,0" VerticalAlignment="Top" Height="Auto" >
+            <telerik:RadChart.DefaultView>
+                <telerik:ChartDefaultView>
+                    <telerik:ChartDefaultView.ChartArea>
+                        <telerik:ChartArea NoDataString="Не знайдено даних для відображення" />
+                    </telerik:ChartDefaultView.ChartArea>
+                    <telerik:ChartDefaultView.ChartLegend>
+                        <telerik:ChartLegend Header="Позначення" />
+                    </telerik:ChartDefaultView.ChartLegend>
+                </telerik:ChartDefaultView>
+            </telerik:RadChart.DefaultView>
+        </telerik:RadChart>
+
+    </Grid>
+</Window>

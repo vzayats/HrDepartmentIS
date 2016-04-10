@@ -1,0 +1,22 @@
+﻿<Window x:Class="HrDepartment.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Налаштування з'єднання" Height="248" Width="513" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" FocusManager.FocusedElement="{Binding ElementName=BrowseButton}" 
+        Icon="Images/Settings 3-96.png" Closing="SettingsWindow_Closing">
+    <Grid>
+        <GroupBox Header="Налаштування підключення до бази даних" HorizontalAlignment="Stretch" Margin="0,5,0,0" VerticalAlignment="Top" Width="474" Height="159">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Ім'я або мережева адреса екземпляру SQL Server, до якого здійснюється підключення (напр. 'Work-PC'):" VerticalAlignment="Top" Width="442"/>
+                <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,47,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="442"/>
+                <CheckBox x:Name="ThisPcCheckBox" Content="Ім'я цього ПК" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="105" Checked="ThisPcCheckBox_OnChecked" Unchecked="ThisPcCheckBox_OnUnchecked"/>
+                <Button x:Name="ApplyButton" Content="Застосувати" HorizontalAlignment="Left" Margin="377,102,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ApplyButton_OnClick"/>
+                <Button x:Name="ResetButton" Content="Скинути" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ResetButton_OnClick"/>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="CloseButton" Content="Закрити" HorizontalAlignment="Left" Margin="416,174,0,0" VerticalAlignment="Top" Width="74" Height="25" Click="CloseButton_OnClick"/>
+        <Button x:Name="CheckButton" Content="Перевірити з'єднання" HorizontalAlignment="Left" Margin="16,174,0,0" VerticalAlignment="Top" Width="138" Height="25" Click="CheckButton_Click"/>
+
+    </Grid>
+</Window>

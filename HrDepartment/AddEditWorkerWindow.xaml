@@ -1,0 +1,357 @@
+﻿<Window x:Class="HrDepartment.AddEditWorkerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"
+        Title="" Height="465.075" Width="746.241" WindowStartupLocation="CenterScreen" 
+        Closing="AddEditWorkerWindow_Closing" ResizeMode="NoResize"  Icon="Images/User-96.png">
+    <Grid>
+        <telerik:RadTabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,46">
+            <telerik:RadTabItem x:Name="EditRadTabItem" Header="Загальні відомості" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+                    <GroupBox Header="Загальні відомості працівника" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="185" Width="470">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Табельний №:" VerticalAlignment="Top"/>
+                            <TextBlock x:Name="IdTextBlock" HorizontalAlignment="Left" Margin="93,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="216"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="NoWrap" Text="Прізвище:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="SurnameTextBox" HorizontalAlignment="Left" Height="23" Margin="93,36,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="361"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="NoWrap" Text="Ім'я:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" Margin="93,67,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="361"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,102,0,0" TextWrapping="NoWrap" Text="По-батькові:" VerticalAlignment="Top" Height="16"/>
+                            <TextBox x:Name="MiddleNameTextBox" HorizontalAlignment="Left" Height="23" Margin="93,98,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="361"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="216,135,0,0" TextWrapping="NoWrap" Text="Дата народження:" VerticalAlignment="Top"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,135,0,0" TextWrapping="NoWrap" Text="Стать:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="93,132,0,0" VerticalAlignment="Top" Width="118">
+                                <ComboBoxItem Name="Item1" Tag="Ч"  Content="Ч"/>
+                                <ComboBoxItem Name="Item2" Tag="Ж"  Content="Ж"/>
+                            </ComboBox>
+                            <telerik:RadDatePicker x:Name="DateOfBirth" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="321,132,0,0" VerticalAlignment="Top" Width="133"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Сімейний стан" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Width="470" Height="58">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Сімейний стан:" VerticalAlignment="Top" />
+                            <ComboBox x:Name="FamilyStatusComboBox" HorizontalAlignment="Left" Margin="94,7,0,0" VerticalAlignment="Top" Width="138">
+                                <ComboBoxItem x:Name="Item3" Tag="Одружений" Content="Одружений"/>
+                                <ComboBoxItem x:Name="Item4" Tag="Неодружений" Content="Неодружений"/>
+                                <ComboBoxItem x:Name="Item5" Tag="Заміжня" Content="Заміжня"/>
+                                <ComboBoxItem x:Name="Item6" Tag="Незаміжня" Content="Незаміжня"/>
+                                <ComboBoxItem x:Name="Item7" Tag="Розведений" Content="Розведений"/>
+                                <ComboBoxItem x:Name="Item8" Tag="Розведена" Content="Розведена"/>
+                                <ComboBoxItem x:Name="Item9" Tag="Вдівець" Content="Вдівець"/>
+                                <ComboBoxItem x:Name="Item10" Tag="Вдова" Content="Вдова"/>
+                            </ComboBox>
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Header="Фотографія працівника" HorizontalAlignment="Left" Margin="485,5,0,0" VerticalAlignment="Top" Width="237" Height="333">
+
+                        <Grid Margin="0,0,0,34">
+                            <Image x:Name="Image" HorizontalAlignment="Center" Height="277" VerticalAlignment="Top" Width="220" Margin="0,0,0,0" Stretch="Uniform"/>
+
+
+                        </Grid>
+
+                    </GroupBox>
+                    <Button x:Name="AddImageButton" HorizontalAlignment="Left" Margin="496,305,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="AddImageButton_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/Add File-96.png" Width="20" Height="20"/>
+                            <TextBlock Text="Додати" VerticalAlignment="Center" ToolTip="Додати інформацію про нову трудову книжку"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="DeleteImageButton"  HorizontalAlignment="Left" Margin="607,305,0,0" VerticalAlignment="Top"  Width="106" Height="25" Click="DeleteImageButton_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/Delete File-96.png" Width="20" Height="20"/>
+                            <TextBlock Text="Видалити" VerticalAlignment="Center" ToolTip="Видалити інформацію про трудову книжку"/>
+                        </StackPanel>
+                    </Button>
+                    <GroupBox Header="Посада та підрозділ" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="470" Height="85">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,8,0,0" TextWrapping="NoWrap" Text="Посада:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="PositonComboBox" HorizontalAlignment="Left" Margin="92,4,0,0" VerticalAlignment="Top" Width="272" ItemsSource="{Binding}"/>
+
+                            <TextBlock HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="NoWrap" Text="Підрозділ:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="DepartmentComboBox" HorizontalAlignment="Left" Margin="92,37,0,0" VerticalAlignment="Top" Width="272" ItemsSource="{Binding}"/>
+
+                        </Grid>
+                    </GroupBox>
+
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="CreateRadTabItem" Header="Паспортні дані" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Паспортні дані" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="96" Width="705">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="NoWrap" Text="Серія та номер:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="PassportTextInput"   maskedInput:MaskedInputExtensions.MaxTextLength="8" HorizontalAlignment="Left"  Margin="101,10,0,0" VerticalAlignment="Top" Width="143"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="249,13,0,0" TextWrapping="NoWrap" Text="Дата видачі:" VerticalAlignment="Top"/>
+                            <telerik:RadDatePicker x:Name="PassportIssueDate" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top" Width="143"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="NoWrap" Text="Громадянство:" VerticalAlignment="Top" Height="16"/>
+                            <TextBox x:Name="CitizenshipTextBox" HorizontalAlignment="Left" Height="23" Margin="101,41,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="143"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Height="136" Width="705">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Ідентифікаційний податковий номер:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="TaxIdTextInput"  Mask="##########" HorizontalAlignment="Left" EmptyContent="Введіть ІПН" Margin="10,31,0,0" VerticalAlignment="Top" Width="139"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="NoWrap" Text="Серія та номер свідоцтва соціального страхування:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="InsuranceTextInput"   maskedInput:MaskedInputExtensions.MaxTextLength="10" HorizontalAlignment="Left"  Margin="10,80,0,0" VerticalAlignment="Top" Width="139"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Інформація про закордонний паспорт" HorizontalAlignment="Left" Margin="10,252,0,-1" VerticalAlignment="Top" Height="91" Width="705">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Серія та номер:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="ForeignPassportTextInput"   maskedInput:MaskedInputExtensions.MaxTextLength="8" HorizontalAlignment="Left"  Margin="140,7,0,0" VerticalAlignment="Top" Width="139"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="NoWrap" Text="Закінчення терміну дії:" VerticalAlignment="Top"/>
+                            <telerik:RadDatePicker x:Name="ForeignExpiry" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="140,38,0,0" VerticalAlignment="Top" Width="139"/>
+                        </Grid>
+                    </GroupBox>
+
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="AddressRadTabItem" Header="Адреси" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Адресні дані" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="152" Width="708">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="NoWrap" Text="Поштовий індекс:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="ZipCodeTextInput"  Mask="#####" HorizontalAlignment="Left" EmptyContent="Введіть індекс" Margin="128,10,0,0" VerticalAlignment="Top" Width="178"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,43,0,0" TextWrapping="NoWrap" Text="Область:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="RegionTextBox" HorizontalAlignment="Left" Height="23" Margin="128,38,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="178"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="311,42,0,0" TextWrapping="NoWrap" Text="Населений пункт:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="TownTextBox" HorizontalAlignment="Left" Height="23" Margin="420,38,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="178"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="NoWrap" Text="Вулиця:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="StreetTextBox" HorizontalAlignment="Left" Height="23" Margin="128,66,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="178"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="311,68,0,0" TextWrapping="NoWrap" Text="Будинок/квартира:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="HouseTextBox" HorizontalAlignment="Left" Height="23" Margin="420,64,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="178"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="NoWrap" Text="Місце народження:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="BirthplaceTextBox" HorizontalAlignment="Left" Height="23" Margin="128,94,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="178"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Телефони та email" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Height="127" Width="708">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,11,0,0" TextWrapping="NoWrap" Text="Домашній телефон:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="HomePhoneTextInput"  Mask="+###(###)###-##-##" HorizontalAlignment="Left" EmptyContent="Введіть номер телефону" Margin="128,9,0,0" VerticalAlignment="Top" Width="178" Height="22"/>
+
+                            <TextBlock HorizontalAlignment="Left" Margin="10,43,0,0" TextWrapping="NoWrap" Text="Мобільний телефон:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="MobileNumberTextInput"  Mask="+##(###)###-##-##" HorizontalAlignment="Left" EmptyContent="Введіть номер телефону" Margin="128,40,0,0" VerticalAlignment="Top" Width="178" Height="22"/>
+
+                            <TextBlock HorizontalAlignment="Left" Margin="311,12,0,0" TextWrapping="NoWrap" Text="Робочий телефон:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="WorkPhoneTextInput"  Mask="+###(###)###-##-##" HorizontalAlignment="Left" EmptyContent="Введіть номер телефону" Margin="416,10,0,0" VerticalAlignment="Top" Width="178" Height="22"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="NoWrap" Text="Email:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="23" Margin="128,69,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="466"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="FamilyRadTabItem" Header="Інформація про сім'ю" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Члени сім'ї працівника" HorizontalAlignment="Left" Margin="10,10,0,-11" VerticalAlignment="Top" Height="359" Width="707">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,35,0,0" TextWrapping="Wrap" Text="Ступінь споріднення:" VerticalAlignment="Top" Width="72"/>
+                            <TextBox x:Name="RelationTextBox" HorizontalAlignment="Left" Height="22" Margin="520,42,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="Прізвище:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamSurnameTextBox" HorizontalAlignment="Left" Height="23" Margin="86,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="237,13,0,0" TextWrapping="NoWrap" Text="Ім'я:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamNameTextBox" HorizontalAlignment="Left" Height="23" Margin="275,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,13,0,0" TextWrapping="NoWrap" Text="По-батькові:" VerticalAlignment="Top" Height="15"/>
+                            <TextBox x:Name="FamMiddleNameTextBox" HorizontalAlignment="Left" Height="23" Margin="520,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,31,0,0" TextWrapping="Wrap" Text="Дата народження:" VerticalAlignment="Top" Width="76" Height="33"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="235,45,0,0" TextWrapping="NoWrap" Text="Стать:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="FamGenderComboBox" HorizontalAlignment="Left" Margin="275,42,0,0" VerticalAlignment="Top" Width="140">
+                                <ComboBoxItem Name="Item11" Tag="Ч"  Content="Ч"/>
+                                <ComboBoxItem Name="Item12" Tag="Ж"  Content="Ж"/>
+                            </ComboBox>
+                            <telerik:RadDatePicker x:Name="FamBirthDate" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="86,42,0,0" VerticalAlignment="Top" Width="140"/>
+                            <Separator Name="Separator1" Margin="9,71,44,258" RenderTransformOrigin="0.506,0.373" >
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleY="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,106,0,0" TextWrapping="Wrap" Text="Ступінь споріднення:" VerticalAlignment="Top" Width="72"/>
+                            <TextBox x:Name="RelationTextBox2" HorizontalAlignment="Left" Height="22" Margin="520,113,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="NoWrap" Text="Прізвище:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamSurnameTextBox2" HorizontalAlignment="Left" Height="23" Margin="86,81,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="237,84,0,0" TextWrapping="NoWrap" Text="Ім'я:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamNameTextBox2" HorizontalAlignment="Left" Height="23" Margin="275,81,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,84,0,0" TextWrapping="NoWrap" Text="По-батькові:" VerticalAlignment="Top" Height="15"/>
+                            <TextBox x:Name="FamMiddleNameTextBox2" HorizontalAlignment="Left" Height="23" Margin="520,81,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,102,0,0" TextWrapping="Wrap" Text="Дата народження:" VerticalAlignment="Top" Width="76" Height="33"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="235,116,0,0" TextWrapping="NoWrap" Text="Стать:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="FamGenderComboBox2" HorizontalAlignment="Left" Margin="275,113,0,0" VerticalAlignment="Top" Width="140">
+                                <ComboBoxItem Name="Item13" Tag="Ч"  Content="Ч"/>
+                                <ComboBoxItem Name="Item14" Tag="Ж"  Content="Ж"/>
+                            </ComboBox>
+                            <telerik:RadDatePicker x:Name="FamBirthDate2" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="86,113,0,0" VerticalAlignment="Top" Width="140"/>
+                            <Separator Name="Separator2" Margin="9,142,44,187" RenderTransformOrigin="0.506,0.373" >
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleY="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <TextBlock HorizontalAlignment="Left" Margin="432,179,0,0" TextWrapping="Wrap" Text="Ступінь споріднення:" VerticalAlignment="Top" Width="72"/>
+                            <TextBox x:Name="RelationTextBox3" HorizontalAlignment="Left" Height="22" Margin="521,186,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="11,154,0,0" TextWrapping="NoWrap" Text="Прізвище:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamSurnameTextBox3" HorizontalAlignment="Left" Height="23" Margin="87,154,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="238,157,0,0" TextWrapping="NoWrap" Text="Ім'я:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamNameTextBox3" HorizontalAlignment="Left" Height="23" Margin="275,154,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="432,157,0,0" TextWrapping="NoWrap" Text="По-батькові:" VerticalAlignment="Top" Height="15"/>
+                            <TextBox x:Name="FamMiddleNameTextBox3" HorizontalAlignment="Left" Height="23" Margin="521,154,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="11,175,0,0" TextWrapping="Wrap" Text="Дата народження:" VerticalAlignment="Top" Width="76" Height="33"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="237,189,0,0" TextWrapping="NoWrap" Text="Стать:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="FamGenderComboBox3" HorizontalAlignment="Left" Margin="274,186,0,0" VerticalAlignment="Top" Width="140">
+                                <ComboBoxItem Name="Item15" Tag="Ч"  Content="Ч"/>
+                                <ComboBoxItem Name="Item16" Tag="Ж"  Content="Ж"/>
+                            </ComboBox>
+                            <telerik:RadDatePicker x:Name="FamBirthDate3" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="87,186,0,0" VerticalAlignment="Top" Width="140"/>
+                            <Separator Name="Separator3" Margin="10,215,43,114" RenderTransformOrigin="0.506,0.373" >
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleY="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,248,0,0" TextWrapping="Wrap" Text="Ступінь споріднення:" VerticalAlignment="Top" Width="72"/>
+                            <TextBox x:Name="RelationTextBox4" HorizontalAlignment="Left" Height="22" Margin="520,255,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="NoWrap" Text="Прізвище:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamSurnameTextBox4" HorizontalAlignment="Left" Height="23" Margin="86,223,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="237,226,0,0" TextWrapping="NoWrap" Text="Ім'я:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="FamNameTextBox4" HorizontalAlignment="Left" Height="23" Margin="275,223,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="431,226,0,0" TextWrapping="NoWrap" Text="По-батькові:" VerticalAlignment="Top" Height="15"/>
+                            <TextBox x:Name="FamMiddleNameTextBox4" HorizontalAlignment="Left" Height="23" Margin="520,223,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,244,0,0" TextWrapping="Wrap" Text="Дата народження:" VerticalAlignment="Top" Width="76" Height="33"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="235,258,0,0" TextWrapping="NoWrap" Text="Стать:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="FamGenderComboBox4" HorizontalAlignment="Left" Margin="275,255,0,0" VerticalAlignment="Top" Width="138">
+                                <ComboBoxItem Name="Item17" Tag="Ч"  Content="Ч"/>
+                                <ComboBoxItem Name="Item18" Tag="Ж"  Content="Ж"/>
+                            </ComboBox>
+                            <telerik:RadDatePicker x:Name="FamBirthDate4" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="86,255,0,0" VerticalAlignment="Top" Width="141"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="EducationRadTabItem" Header="Освіта" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Інформація про освіту працівника" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="144" Width="704">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,11,0,0" TextWrapping="NoWrap" Text="Навчальний заклад:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="InstitutionTextBox" HorizontalAlignment="Left" Height="23" Margin="128,8,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="554"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="NoWrap" Text="Рік закінчення:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="GraduationYearTextInput"  Mask="####" HorizontalAlignment="Left" Margin="128,70,0,0" VerticalAlignment="Top" Width="101"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="NoWrap" Text="Спеціальність:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="ProfessionTextBox" HorizontalAlignment="Left" Height="23" Margin="128,40,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="554"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="234,73,0,0" TextWrapping="NoWrap" Text="Форма навчання:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="EducationFormComboBox" HorizontalAlignment="Left" Margin="334,70,0,0" VerticalAlignment="Top" Width="151">
+                                <ComboBoxItem x:Name="Item19" Tag="Денна" Content="Денна"/>
+                                <ComboBoxItem x:Name="Item20" Tag="Заочна" Content="Заочна"/>
+                                <ComboBoxItem x:Name="Item21" Tag="Екстернат" Content="Екстернат"/>
+                                <ComboBoxItem x:Name="Item22" Tag="Вечірня" Content="Вечірня"/>
+                            </ComboBox>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Інформація про післядипломну освіту працівника" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Height="144" Width="704">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="12,13,0,0" TextWrapping="NoWrap" Text="Навчальний заклад:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="PostGraduateInstitutionTextBox" HorizontalAlignment="Left" Height="23" Margin="130,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="552"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="12,75,0,0" TextWrapping="NoWrap" Text="Рік закінчення:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="GraduationYearPostTextInput"  Mask="####" HorizontalAlignment="Left" Margin="130,72,0,0" VerticalAlignment="Top" Width="99"/>
+
+                            <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="NoWrap" Text="Спеціальність:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="ProfessionPostTextBox" HorizontalAlignment="Left" Height="23" Margin="130,42,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="552"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="234,75,0,0" TextWrapping="NoWrap" Text="Форма навчання:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="EducationFormPostComboBox" HorizontalAlignment="Left" Margin="334,72,0,0" VerticalAlignment="Top" Width="151">
+                                <ComboBoxItem x:Name="Item23" Tag="Денна" Content="Денна"/>
+                                <ComboBoxItem x:Name="Item24" Tag="Заочна" Content="Заочна"/>
+                                <ComboBoxItem x:Name="Item25" Tag="Екстернат" Content="Екстернат"/>
+                                <ComboBoxItem x:Name="Item26" Tag="Вечірня" Content="Вечірня"/>
+                            </ComboBox>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="ContractRadTabItem" Header="Дані про контракт" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Додати нового користувача" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="147" Width="706">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="NoWrap" Text="Дата прийняття на роботу:" VerticalAlignment="Top"/>
+                            <telerik:RadDatePicker x:Name="HiringDate" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="216,13,0,0" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="NoWrap" Text="Дата звільнення з роботи:" VerticalAlignment="Top"/>
+                            <telerik:RadDatePicker x:Name="DismissDate" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="216,46,0,0" VerticalAlignment="Top" Width="140"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="Дата завершення випробувального терміну:" VerticalAlignment="Top" Height="36" Width="207"/>
+                            <telerik:RadDatePicker x:Name="Probation" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="216,82,0,0" VerticalAlignment="Top" Width="140"/>
+
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem x:Name="MilitaryRadTabItem" Header="Військовий облік" Height="30">
+                <Grid Background="Transparent" Margin="0,0,0,0">
+
+                    <GroupBox Header="Відомості про військовий облік" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="270" Width="704">
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="NoWrap" Text="Група обліку:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="AccountingGroupComboBox" HorizontalAlignment="Left" Margin="87,11,0,0" VerticalAlignment="Top" Width="151">
+                                <ComboBoxItem x:Name="Item27" Tag="ВМС" Content="ВМС"/>
+                                <ComboBoxItem x:Name="Item28" Tag="ЗСУ" Content="ЗСУ"/>
+                                <ComboBoxItem x:Name="Item29" Tag="МВС" Content="МВС"/>
+                                <ComboBoxItem x:Name="Item30" Tag="СБУ" Content="СБУ"/>
+                            </ComboBox>
+                            <TextBlock HorizontalAlignment="Left" Margin="13,42,0,0" TextWrapping="NoWrap" Text="Склад:" VerticalAlignment="Top"/>
+                            <ComboBox x:Name="MilitaryStructureComboBox" HorizontalAlignment="Left" Margin="87,39,0,0" VerticalAlignment="Top" Width="151">
+                                <ComboBoxItem x:Name="Item31" Tag="Вищі офіцери" Content="Вищі офіцери"/>
+                                <ComboBoxItem x:Name="Item32" Tag="Молодші офіцери" Content="Молодші офіцери"/>
+                                <ComboBoxItem x:Name="Item33" Tag="Прапорщики, мічмани" Content="Прапорщики, мічмани"/>
+                                <ComboBoxItem x:Name="Item34" Tag="Сержанти, старшини" Content="Сержанти, старшини"/>
+                                <ComboBoxItem x:Name="Item35" Tag="Солдати, матроси" Content="Солдати, матроси"/>
+                                <ComboBoxItem x:Name="Item36" Tag="Сержанти, старшини" Content="Сержанти, старшини"/>
+                                <ComboBoxItem x:Name="Item37" Tag="Старші офіцери" Content="Старші офіцери"/>
+                            </ComboBox>
+                            <TextBlock HorizontalAlignment="Left" Margin="13,69,0,0" TextWrapping="NoWrap" Text="Номер ВОС:" VerticalAlignment="Top"/>
+                            <telerik:RadMaskedTextInput x:Name="NumberSpecialtiesTextInput"  Mask="###" HorizontalAlignment="Left" Margin="87,66,0,0" VerticalAlignment="Top" Width="151"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="243,14,0,0" TextWrapping="NoWrap" Text="Військове звання:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="MilitaryRankTextBox" HorizontalAlignment="Left" Height="23" Margin="346,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="231"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="243,42,0,0" TextWrapping="NoWrap" Text="Придатність:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="SuitabilityTextBox" HorizontalAlignment="Left" Height="23" Margin="346,39,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="231"/>
+                            <CheckBox x:Name="Ismobilized" Content="Мобілізовано" HorizontalAlignment="Left" Margin="87,97,0,0" VerticalAlignment="Top"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="243,97,0,0" TextWrapping="NoWrap" Text="Дата мобілізації:" VerticalAlignment="Top"/>
+                            <telerik:RadDatePicker x:Name="DateOfMobilization" DateTimeWatermarkContent="Оберіть дату" HorizontalAlignment="Left" Margin="346,94,0,0" VerticalAlignment="Top" Width="141"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="13,117,0,0" TextWrapping="NoWrap" Text="Найменування військового комісаріату:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="NameOfMilitaryTextBox" HorizontalAlignment="Left" Height="23" Margin="13,138,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="474"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="13,166,0,0" TextWrapping="NoWrap" Text="Бронь:" VerticalAlignment="Top"/>
+                            <TextBox x:Name="ReservationsTextBox" HorizontalAlignment="Left" Height="23" Margin="13,187,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="225"/>
+                        </Grid>
+                    </GroupBox>
+
+                </Grid>
+            </telerik:RadTabItem>
+        </telerik:RadTabControl>
+        <Button x:Name="AddWorkerButton" HorizontalAlignment="Left" Margin="576,395,0,0" VerticalAlignment="Top" Width="147" Height="25" Click="AddWorkerButton_Click" Visibility="Hidden">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Add User-96.png" Width="20" Height="20"/>
+                <TextBlock Text="Додати працівника" VerticalAlignment="Center" ToolTip="Додати інформацію про нового працівника" Width="112"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="EditWorkerButton" HorizontalAlignment="Left" Margin="618,395,0,0" VerticalAlignment="Top" Width="105" Height="25" Click="EditWorkerButton_OnClick"  Visibility="Hidden">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Edit User-96.png" Width="20" Height="20"/>
+                <TextBlock Text="Внести зміни" VerticalAlignment="Center" ToolTip="Редагувати інформацію про існуючого працівника" Width="79"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,294 @@
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\HrDepartment.exe.config
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про відпустки».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про військовий обов’язок і військову службу».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про державну службу».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про загальнообов’язкове державне пенсійне.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про загальнообов’язкове державне соціальне.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про колективні договори і угоди».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про оплату праці».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про професійний розвиток працівників».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Кодекс законів про працю України (КЗпП).xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Наказ Міністерства фінансів України «Про затвердження.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Постанова Кабінету Міністрів України «Про затвердження Порядку.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про зайнятість населення».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про пенсійне забезпечення».xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Інструкція про порядок ведення трудових книжок працівників.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про державну допомогу сім’ям з дітьми» .xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Закон України Про основи соціальної захищеності.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Documents\Класифікатор професій ДК 003 2010.xps
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Manual\UserManual.chm
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\HrDepartment.exe
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\HrDepartment.pdb
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\ReportLib.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Chart.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Charting.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Data.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.DataVisualization.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.Export.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Input.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Navigation.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.RibbonView.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Data.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Core.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Fixed.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Maths.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Zip.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\ReportLib.pdb
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Chart.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Charting.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Data.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.DataVisualization.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.Export.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Input.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Navigation.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.RibbonView.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Data.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Core.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Fixed.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Maths.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Zip.xml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\de\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\es\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\it\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\bin\Release\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.csprojResolveAssemblyReference.cache
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AboutWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ActivityWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditActivityWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditCvWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditDepartmentWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditPositionWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditVacationWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkBookWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkerWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\BackupWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\BugReportWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CsvExportWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CvWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\DepartmentsWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\EditLoginsWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\EmployeeInfoDetailsTemplate.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ExcelExportWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\FeedbackWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\LawWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\LoginWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\PersonalCardWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\PositionsWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ReportWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\RestoreWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\SearchWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\SettingsWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StaffWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWorkerWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\Themes\Telerik.ReportViewer.Wpf.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\VacationWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\WorkBooksWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\App.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AboutWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ActivityWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditActivityWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditCvWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditDepartmentWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditPositionWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditVacationWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkBookWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkerWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\BackupWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\BugReportWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CalendarWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CsvExportWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CvWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\DepartmentsWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\EditLoginsWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\EmployeeInfoDetailsTemplate.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\Example.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ExcelExportWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\FeedbackWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\LawWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\LoginWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\MainWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\PersonalCardWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\PositionsWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\ReportWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\RestoreWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\SearchWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\SettingsWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StaffWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWorkerWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\VacationWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\WorkBooksWindow.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\App.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_Content.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_MarkupCompile.cache
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_MarkupCompile.lref
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\CalendarWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\Example.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\MainWindow.baml
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.g.resources
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.Properties.Resources.resources
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.csproj.GenerateResource.Cache
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.exe.licenses
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.exe
+C:\Users\vzaya\Dropbox\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.pdb
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\HrDepartment.exe.config
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.exe
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.pdb
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.csprojResolveAssemblyReference.cache
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AboutWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ActivityWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditActivityWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditCvWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditDepartmentWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditPositionWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditVacationWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkBookWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkerWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\BackupWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\BugReportWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CsvExportWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CvWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\DepartmentsWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\EditLoginsWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\EmployeeInfoDetailsTemplate.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ExcelExportWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\FeedbackWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\LawWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\LoginWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\PersonalCardWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\PositionsWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ReportWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\RestoreWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\SearchWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\SettingsWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StaffWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWorkerWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\Themes\Telerik.ReportViewer.Wpf.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\VacationWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\WorkBooksWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\App.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AboutWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ActivityWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditActivityWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditCvWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditDepartmentWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditPositionWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditVacationWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkBookWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\AddEditWorkerWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\BackupWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\BugReportWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CalendarWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CsvExportWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CvWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\DepartmentsWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\EditLoginsWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\EmployeeInfoDetailsTemplate.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\Example.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ExcelExportWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\FeedbackWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\LawWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\LoginWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\MainWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\PersonalCardWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\PositionsWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\ReportWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\RestoreWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\SearchWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\SettingsWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StaffWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\StatisticsWorkerWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\VacationWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\WorkBooksWindow.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\App.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_Content.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_MarkupCompile.cache
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment_MarkupCompile.lref
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про відпустки».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про військовий обов’язок і військову службу».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про державну службу».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про загальнообов’язкове державне пенсійне.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про загальнообов’язкове державне соціальне.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про колективні договори і угоди».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про оплату праці».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про професійний розвиток працівників».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Кодекс законів про працю України (КЗпП).xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Наказ Міністерства фінансів України «Про затвердження.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Постанова Кабінету Міністрів України «Про затвердження Порядку.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про зайнятість населення».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про пенсійне забезпечення».xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Інструкція про порядок ведення трудових книжок працівників.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України «Про державну допомогу сім’ям з дітьми» .xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Закон України Про основи соціальної захищеності.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Documents\Класифікатор професій ДК 003 2010.xps
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Manual\UserManual.chm
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\HrDepartment.exe
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\HrDepartment.pdb
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\ReportLib.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Chart.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Charting.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Data.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.DataVisualization.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.Export.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Input.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Navigation.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.RibbonView.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Data.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Core.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Fixed.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Maths.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Zip.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\ReportLib.pdb
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Chart.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Charting.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Data.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.DataVisualization.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.GridView.Export.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Input.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.Navigation.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Controls.RibbonView.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Data.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Core.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Fixed.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Maths.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\Telerik.Windows.Zip.xml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\de\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\es\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\it\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\bin\Release\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\CalendarWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\Example.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\MainWindow.baml
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.g.resources
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.Properties.Resources.resources
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.csproj.GenerateResource.Cache
+C:\Users\vzaya\Dropbox\ЛПУ\Дипломна\HrDepartment\HrDepartment\obj\x86\Release\HrDepartment.exe.licenses

@@ -1,0 +1,32 @@
+﻿<Window x:Class="HrDepartment.BugReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Повідомити про виявлену помилку" Height="370.043" Width="566.24" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" FocusManager.FocusedElement="{Binding ElementName=ReportichTextBox}" 
+        Icon="Images/Bug-100.png" Closing="BugReportWindow_Closing">
+    <Grid>
+        <GroupBox Header="Інформація про помилку" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="243" Width="529">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,183,0,0" TextWrapping="Wrap" Text="Зображення екрану: (за бажанням)" VerticalAlignment="Top" Width="121" Height="32"/>
+                <Label Content="Ваше ім'я:" HorizontalAlignment="Left" Margin="5,5,0,0" RenderTransformOrigin="0.933,-2.167" VerticalAlignment="Top" Height="27"/>
+                <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" Margin="131,9,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="375"/>
+                <RichTextBox x:Name="ReportichTextBox" HorizontalAlignment="Left" Height="138" Margin="131,40,0,0" VerticalAlignment="Top" Width="375">
+
+                </RichTextBox>
+                <TextBox x:Name="ImageFileTextBox" HorizontalAlignment="Left" Height="24" Margin="131,188,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="291"/>
+                <Button x:Name="BrowseButton" Content="Обрати" HorizontalAlignment="Left" Margin="431,188,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="BrowseButton_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="Опишіть помилку: (коротка інформація, при яких діях вона з'являється)" VerticalAlignment="Top" Width="121" Height="89"/>
+            </Grid>
+
+        </GroupBox>
+
+        <Button x:Name="SendButton" Content="Надіслати" HorizontalAlignment="Left" Margin="460,299,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="SendButton_Click"/>
+        <Button x:Name="CloseButton" Content="Скасувати" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="CloseButton_Click"/>
+        <GroupBox Header="Знімок екрану" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Height="51" Width="529">
+            <Grid>
+                <TextBlock Margin="10,5,187,0" TextWrapping="Wrap" Text="Зробити знімок (скріншот) Вашого екрану" VerticalAlignment="Top" Height="21"/>
+                <Button x:Name="ScreenshotButton" Content="Захопити" HorizontalAlignment="Left" Margin="430,0,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ScreenshotButton_Click"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

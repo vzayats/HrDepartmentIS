@@ -1,0 +1,19 @@
+﻿<Window x:Class="HrDepartment.RestoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Відновлення резервної копії" Height="138.83" Width="581.128" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        FocusManager.FocusedElement="{Binding ElementName=BrowseButton}" Icon="Images/Data Restore-100.png" Closing="RestoreWindow_Closing">
+    <Grid>
+        <GroupBox Header="Відновлення даних" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="64" Width="547">
+            <Grid>
+                <Label Content="Оберіть резервну копію:" HorizontalAlignment="Left" Margin="2,9,0,0" RenderTransformOrigin="0.933,-2.167" VerticalAlignment="Top" Height="27"/>
+                <TextBox x:Name="RestoreFileTextBox" HorizontalAlignment="Left" Height="23" Margin="154,11,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="291"/>
+                <Button x:Name="BrowseButton" Content="Обрати" HorizontalAlignment="Left" Margin="450,10,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="BrowseButton_Click"/>
+            </Grid>
+        </GroupBox>
+
+        <Button x:Name="RestoreButton" Content="Відновити" HorizontalAlignment="Left" Margin="481,69,0,0" VerticalAlignment="Top" Width="76" Height="25" Click="RestoreButton_Click"/>
+        <Button x:Name="CLoseButton" Content="Закрити" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="74" Height="25" RenderTransformOrigin="0.187,0.609" Click="CLoseButton_Click"/>
+
+    </Grid>
+</Window>

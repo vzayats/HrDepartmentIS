@@ -1,0 +1,27 @@
+﻿<Window x:Class="HrDepartment.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="Вхід" Height="175.667" Width="458.142" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" FocusManager.FocusedElement="{Binding ElementName=LoginTextBox}"
+        Closing="LoginWindow_Closing" Icon="Images/lock.png">
+    <Grid>
+        <GroupBox Header="Введіть Ваш логін і пароль" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="102" Width="421">
+            <Grid>
+                <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Source="Images/Lock 2-100.png" Margin="0,5,0,0"/>
+                <TextBox x:Name="LoginTextBox" HorizontalAlignment="Left" Height="23" Margin="118,10,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="281"/>
+                <TextBlock HorizontalAlignment="Left" Margin="65,11,0,0" TextWrapping="NoWrap" Text="Логін:" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="65,49,0,0" TextWrapping="NoWrap" Text="Пароль:" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="118,47,0,0" VerticalAlignment="Top" Width="281" Height="23" KeyUp="PasswordBox_KeyUp" />
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="EntryButton" HorizontalAlignment="Left" Margin="356,107,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="EntryButton_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Enter-96.png" Width="20" Height="20"/>
+                <TextBlock Text="Вхід" VerticalAlignment="Center" ToolTip="Виконати вхід в інформаційну систему" Width="26"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="ExitButton" Content="Вихід" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="ExitButton_Click"/>
+
+    </Grid>
+</Window>

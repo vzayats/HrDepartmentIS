@@ -1,0 +1,24 @@
+﻿<Window x:Class="HrDepartment.FeedbackWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Надіслати відгук про програму" Height="286" Width="526" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" FocusManager.FocusedElement="{Binding ElementName=MailRichTextBox}" 
+        Icon="Images/Feedback-100.png" Closing="FeedbackWindow_Closing">
+    <Grid>
+        <GroupBox Header="Відгук" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="206" Width="487">
+            <Grid>
+                <Label Content="Текст відгуку:" HorizontalAlignment="Left" Margin="5,36,0,0" RenderTransformOrigin="0.933,-2.167" VerticalAlignment="Top" Height="27"/>
+                <Label Content="Ваше ім'я:" HorizontalAlignment="Left" Margin="5,3,0,0" RenderTransformOrigin="0.933,-2.167" VerticalAlignment="Top" Height="23"/>
+                <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" Margin="97,5,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="375"/>
+                <RichTextBox x:Name="MailRichTextBox" HorizontalAlignment="Left" Height="138" Margin="97,36,0,0" VerticalAlignment="Top" Width="375">
+
+                </RichTextBox>
+
+            </Grid>
+
+        </GroupBox>
+
+        <Button x:Name="SendButton" Content="Надіслати" HorizontalAlignment="Left" Margin="418,211,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="SendButton_Click" RenderTransformOrigin="-0.187,0.348"/>
+        <Button x:Name="CloseButton" Content="Скасувати" HorizontalAlignment="Left" Margin="335,211,0,0" VerticalAlignment="Top" Width="74" Height="25" Click="CloseButton_Click"/>
+    </Grid>
+</Window>

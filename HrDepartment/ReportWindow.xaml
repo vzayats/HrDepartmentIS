@@ -1,0 +1,307 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tr="http://schemas.telerik.com/wpf" x:Class="HrDepartment.ReportWindow"
+        xmlns:reporting="clr-namespace:Telerik.Reporting;assembly=Telerik.Reporting"
+        Title="Формування звітності" Height="600" Width="1100" WindowStartupLocation="CenterScreen" Icon="Images/Reports.png"
+        Closing="ReportWindow_Closing">
+    <Grid>
+        <GroupBox Header="Оберіть звіт" HorizontalAlignment="Left" Margin="5,5,0,6" VerticalAlignment="Stretch"   Width="283">
+            <ListBox HorizontalAlignment="Left"     VerticalAlignment="Stretch" Width="272" Margin="0,5,-1,2"  >
+
+                <ListBoxItem x:Name="ListBoxItem1" PreviewMouseDown="ListBoxItem1_PreviewMouseDown" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список працівників (жінки)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem2" PreviewMouseDown="ListBoxItem2_OnPreviewMouseDown" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список працівників (чоловіки)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+
+                <ListBoxItem x:Name="ListBoxItem3" PreviewMouseDown="ListBoxItem3_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Загальний список працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem4" PreviewMouseDown="ListBoxItem4_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Вікові групи працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem5" PreviewMouseDown="ListBoxItem5_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Громадянство працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem6" PreviewMouseDown="ListBoxItem6_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Адресні дані працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem7" PreviewMouseDown="ListBoxItem7_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Контакти працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem8" PreviewMouseDown="ListBoxItem8_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Дата прийняття працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem9" PreviewMouseDown="ListBoxItem9_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Працівники та їх статуси"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem10" PreviewMouseDown="ListBoxItem10_OnPreviewMouseDown" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Кількість працівників у відділах (з підсумками)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem11"  PreviewMouseDown="ListBoxItem11_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Кількість працівників у відділах (без підсумків)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem12"  PreviewMouseDown="ListBoxItem12_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Кількість жінок та чоловіків"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem13"  PreviewMouseDown="ListBoxItem13_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Працівники та оклади/надбавки"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem14" PreviewMouseDown="ListBoxItem14_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Прийнято на роботу працівників по підрозділах(за увесь час)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem15"  PreviewMouseDown="ListBoxItem15_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Звільнені працівники"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem16" PreviewMouseDown="ListBoxItem16_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про дітей працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem17" PreviewMouseDown="ListBoxItem17_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про неповнолітніх дітей працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem18" PreviewMouseDown="ListBoxItem18_OnPreviewMouseDown" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про кількість дітей"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem19" PreviewMouseDown="ListBoxItem19_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про членів сім'ї"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem20" PreviewMouseDown="ListBoxItem20_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Сімейний стан працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem21" PreviewMouseDown="ListBoxItem21_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Стать працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem22" PreviewMouseDown="ListBoxItem22_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Місце народження працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem23" PreviewMouseDown="ListBoxItem23_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Паспортні дані (державний)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem24" PreviewMouseDown="ListBoxItem24_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Паспортні дані (закордонний паспорт)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem25" PreviewMouseDown="ListBoxItem25_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про державне соціалье страхування"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem26" PreviewMouseDown="ListBoxItem26_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про освіту працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem27" PreviewMouseDown="ListBoxItem27_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про післядипломну освіту"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem28" PreviewMouseDown="ListBoxItem28_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Загальний список посад"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem29" PreviewMouseDown="ListBoxItem29_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список посад (з окладами)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem30" PreviewMouseDown="ListBoxItem30_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список підрозділів"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem31" PreviewMouseDown="ListBoxItem31_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про підрозділи"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem32" PreviewMouseDown="ListBoxItem32_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список працівників та їх посад"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem33" PreviewMouseDown="ListBoxItem33_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список працюючих працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem34" PreviewMouseDown="ListBoxItem34_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Працівники, які проходять випробувальний термін"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem35" PreviewMouseDown="ListBoxItem35_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Працівники, яких було звільнено"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem37" PreviewMouseDown="ListBoxItem37_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Працівники та їхні оклади"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem38" PreviewMouseDown="ListBoxItem38_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список особових карток працюючих працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem39" PreviewMouseDown="ListBoxItem39_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Присутність на роботі працівників (за рік)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem40" PreviewMouseDown="ListBoxItem40_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Лікарняні працівників (за рік)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem41" PreviewMouseDown="ListBoxItem41_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Відпустки працівників (за рік)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem42" PreviewMouseDown="ListBoxItem42_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Відсутність працівників (за рік)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem43" PreviewMouseDown="ListBoxItem43_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Діяльність працівників за рік (зведений звіт)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem44" PreviewMouseDown="ListBoxItem44_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Діяльність працівників за всі періоди (зведений звіт)"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem45" PreviewMouseDown="ListBoxItem45_OnPreviewMouseDown" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Список трудових книжок"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem46" PreviewMouseDown="ListBoxItem46_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Інформація про відпустки працівників"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem47" PreviewMouseDown="ListBoxItem47_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Штатний розпис"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="ListBoxItem48" PreviewMouseDown="ListBoxItem48_OnPreviewMouseDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/report2.png" />
+                        <TextBlock><Run Text="Штатна книга"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+
+
+
+            </ListBox>
+
+        </GroupBox>
+
+        <tr:ReportViewer x:Name="ReportViewer"  Margin="293,10,10,10"></tr:ReportViewer>
+
+
+
+    </Grid>
+</Window>

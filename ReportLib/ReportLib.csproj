@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D76B4A8-5D08-4BD5-BE46-F48583761843}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportLib</RootNamespace>
+    <AssemblyName>ReportLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=9.2.15.1105, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsenceWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AbsenceWorkersReport.Designer.cs">
+      <DependentUpon>AbsenceWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityWorkersAllReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ActivityWorkersAllReport.Designer.cs">
+      <DependentUpon>ActivityWorkersAllReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityWorkersYearReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ActivityWorkersYearReport.Designer.cs">
+      <DependentUpon>ActivityWorkersYearReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AddressesReport.Designer.cs">
+      <DependentUpon>AddressesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgeWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AgeWorkersReport.Designer.cs">
+      <DependentUpon>AgeWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllHirringByDeptReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllHirringByDeptReport.Designer.cs">
+      <DependentUpon>AllHirringByDeptReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirthPlaceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BirthPlaceReport.Designer.cs">
+      <DependentUpon>BirthPlaceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildrensAllReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChildrensAllReport.Designer.cs">
+      <DependentUpon>ChildrensAllReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citizenship.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Citizenship.Designer.cs">
+      <DependentUpon>Citizenship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonListOfWorkersReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonListOfWorkersReport1.Designer.cs">
+      <DependentUpon>CommonListOfWorkersReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContactReport.Designer.cs">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountFMReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CountFMReport.Designer.cs">
+      <DependentUpon>CountFMReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountOfChildrensReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CountOfChildrensReport.Designer.cs">
+      <DependentUpon>CountOfChildrensReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountOfWorkers2Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CountOfWorkers2Report.Designer.cs">
+      <DependentUpon>CountOfWorkers2Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountOfWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CountOfWorkersReport.Designer.cs">
+      <DependentUpon>CountOfWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentInfoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DepartmentInfoReport.Designer.cs">
+      <DependentUpon>DepartmentInfoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DismissedWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DismissedWorkersReport.Designer.cs">
+      <DependentUpon>DismissedWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EducationReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EducationReport.Designer.cs">
+      <DependentUpon>EducationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyMembersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FamilyMembersReport.Designer.cs">
+      <DependentUpon>FamilyMembersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadUnitBookReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HeadUnitBookReport.Designer.cs">
+      <DependentUpon>HeadUnitBookReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HiringDateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HiringDateReport.Designer.cs">
+      <DependentUpon>HiringDateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HospitalWorkersReport.Designer.cs">
+      <DependentUpon>HospitalWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InsuranceReport.Designer.cs">
+      <DependentUpon>InsuranceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfDepartmentsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfDepartmentsReport.Designer.cs">
+      <DependentUpon>ListOfDepartmentsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfDismissedWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfDismissedWorkersReport.Designer.cs">
+      <DependentUpon>ListOfDismissedWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfEmployedReportReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfEmployedReportReport.Designer.cs">
+      <DependentUpon>ListOfEmployedReportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfPersonalCardsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfPersonalCardsReport.Designer.cs">
+      <DependentUpon>ListOfPersonalCardsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfPositionsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfPositionsReport.Designer.cs">
+      <DependentUpon>ListOfPositionsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfPositionsSalaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfPositionsSalaryReport.Designer.cs">
+      <DependentUpon>ListOfPositionsSalaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfWorkesPositionsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListOfWorkesPositionsReport.Designer.cs">
+      <DependentUpon>ListOfWorkesPositionsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaritalStatusReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaritalStatusReport.Designer.cs">
+      <DependentUpon>MaritalStatusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassportDataForeignReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PassportDataForeignReport.Designer.cs">
+      <DependentUpon>PassportDataForeignReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassportDataReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PassportDataReport.Designer.cs">
+      <DependentUpon>PassportDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostGraduateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PostGraduateReport.Designer.cs">
+      <DependentUpon>PostGraduateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PresentWorkersReport.Designer.cs">
+      <DependentUpon>PresentWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProbationaryPeriodReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProbationaryPeriodReport.Designer.cs">
+      <DependentUpon>ProbationaryPeriodReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryBonusReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalaryBonusReport.Designer.cs">
+      <DependentUpon>SalaryBonusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffListReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaffListReport.Designer.cs">
+      <DependentUpon>StaffListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusWorkersReport.Designer.cs">
+      <DependentUpon>StatusWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnderageChildrensReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UnderageChildrensReport.Designer.cs">
+      <DependentUpon>UnderageChildrensReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacationsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VacationsReport.Designer.cs">
+      <DependentUpon>VacationsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacationWorkersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VacationWorkersReport.Designer.cs">
+      <DependentUpon>VacationWorkersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkBooksReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkBooksReport.Designer.cs">
+      <DependentUpon>WorkBooksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerCardReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkerCardReport.Designer.cs">
+      <DependentUpon>WorkerCardReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerGenderReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkerGenderReport.Designer.cs">
+      <DependentUpon>WorkerGenderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerListF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkerListF.Designer.cs">
+      <DependentUpon>WorkerListF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerListM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkerListM.Designer.cs">
+      <DependentUpon>WorkerListM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersAgeCommonReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkersAgeCommonReport.Designer.cs">
+      <DependentUpon>WorkersAgeCommonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersAndSalaryReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkersAndSalaryReport1.Designer.cs">
+      <DependentUpon>WorkersAndSalaryReport1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbsenceWorkersReport.resx">
+      <DependentUpon>AbsenceWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityWorkersAllReport.resx">
+      <DependentUpon>ActivityWorkersAllReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityWorkersYearReport.resx">
+      <DependentUpon>ActivityWorkersYearReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressesReport.resx">
+      <DependentUpon>AddressesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeWorkersReport.resx">
+      <DependentUpon>AgeWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllHirringByDeptReport.resx">
+      <DependentUpon>AllHirringByDeptReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirthPlaceReport.resx">
+      <DependentUpon>BirthPlaceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildrensAllReport.resx">
+      <DependentUpon>ChildrensAllReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citizenship.resx">
+      <DependentUpon>Citizenship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonListOfWorkersReport1.resx">
+      <DependentUpon>CommonListOfWorkersReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactReport.resx">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountFMReport.resx">
+      <DependentUpon>CountFMReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountOfChildrensReport.resx">
+      <DependentUpon>CountOfChildrensReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountOfWorkers2Report.resx">
+      <DependentUpon>CountOfWorkers2Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountOfWorkersReport.resx">
+      <DependentUpon>CountOfWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentInfoReport.resx">
+      <DependentUpon>DepartmentInfoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DismissedWorkersReport.resx">
+      <DependentUpon>DismissedWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EducationReport.resx">
+      <DependentUpon>EducationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyMembersReport.resx">
+      <DependentUpon>FamilyMembersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadUnitBookReport.resx">
+      <DependentUpon>HeadUnitBookReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HiringDateReport.resx">
+      <DependentUpon>HiringDateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalWorkersReport.resx">
+      <DependentUpon>HospitalWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsuranceReport.resx">
+      <DependentUpon>InsuranceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfDepartmentsReport.resx">
+      <DependentUpon>ListOfDepartmentsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfDismissedWorkersReport.resx">
+      <DependentUpon>ListOfDismissedWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfEmployedReportReport.resx">
+      <DependentUpon>ListOfEmployedReportReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfPersonalCardsReport.resx">
+      <DependentUpon>ListOfPersonalCardsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfPositionsReport.resx">
+      <DependentUpon>ListOfPositionsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfPositionsSalaryReport.resx">
+      <DependentUpon>ListOfPositionsSalaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfWorkesPositionsReport.resx">
+      <DependentUpon>ListOfWorkesPositionsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaritalStatusReport.resx">
+      <DependentUpon>MaritalStatusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassportDataForeignReport.resx">
+      <DependentUpon>PassportDataForeignReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassportDataReport.resx">
+      <DependentUpon>PassportDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostGraduateReport.resx">
+      <DependentUpon>PostGraduateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentWorkersReport.resx">
+      <DependentUpon>PresentWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProbationaryPeriodReport.resx">
+      <DependentUpon>ProbationaryPeriodReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SalaryBonusReport.resx">
+      <DependentUpon>SalaryBonusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffListReport.resx">
+      <DependentUpon>StaffListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusWorkersReport.resx">
+      <DependentUpon>StatusWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnderageChildrensReport.resx">
+      <DependentUpon>UnderageChildrensReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationsReport.resx">
+      <DependentUpon>VacationsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationWorkersReport.resx">
+      <DependentUpon>VacationWorkersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkBooksReport.resx">
+      <DependentUpon>WorkBooksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerCardReport.resx">
+      <DependentUpon>WorkerCardReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerGenderReport.resx">
+      <DependentUpon>WorkerGenderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerListF.resx">
+      <DependentUpon>WorkerListF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerListM.resx">
+      <DependentUpon>WorkerListM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkersAgeCommonReport.resx">
+      <DependentUpon>WorkersAgeCommonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkersAndSalaryReport1.resx">
+      <DependentUpon>WorkersAndSalaryReport1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

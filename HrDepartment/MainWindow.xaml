@@ -1,0 +1,263 @@
+﻿<Window x:Class="HrDepartment.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                xmlns:hrDepartment="clr-namespace:HrDepartment"
+                Title="Інформаційна система 'Відділ кадрів підприємства'" Height="650" Width="1100" WindowStartupLocation="CenterScreen" Icon="Images/group.ico" Closing="MainWindow_Closing">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <DataTemplate x:Key="EmployeeInfoRowDetailsTemplate">
+                <hrDepartment:EmployeeInfoDetailsTemplate />
+            </DataTemplate>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+        <telerik:RadRibbonView x:Name="Ribbon" ApplicationName="ІС &quot;Відділ кадрів&quot;" HelpButtonVisibility="Visible"  HelpCommand="{Binding}" HelpButtonImageSource="Images/Help-48.png" ApplicationButtonVisibility="Collapsed" TitleBarVisibility="Collapsed" telerik:KeyTipService.IsKeyTipsEnabled="True">
+            <telerik:RadRibbonTab Header="Головна" telerik:KeyTipService.AccessText="M" >
+                <telerik:RadRibbonGroup Header="Картка працівника">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="AddWorkerButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Add User-96.png" Size="Large" Text="Додати"
+								telerik:KeyTipService.AccessText="A"  Click="AddWorkerButton_OnClick"/>
+                        <telerik:RadRibbonButton x:Name="EditWorkerButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Edit User-96.png" Size="Large" Text="Змінити"
+								telerik:KeyTipService.AccessText="E" Click="EditWorkerButton_OnClick" />
+                        <telerik:RadRibbonButton x:Name="RemoveWorkerButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Remove User-96.png" Size="Large" Text="Видалити"
+								telerik:KeyTipService.AccessText="D" Click="RemoveWorkerButton_OnClick"/>
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Пошук" telerik:KeyTipService.AccessText="SW" >
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="SearchButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Search-100.png" Size="Large" Text="Пошук працівників"
+								telerik:KeyTipService.AccessText="S" Click="SearchButton_Click" />
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Кадровий облік" telerik:KeyTipService.AccessText="O">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="DepartmentsButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Org Unit-96.png" Size="Large" Text="Підрозділи" 
+								telerik:KeyTipService.AccessText="D" Click="DepartmentsButton_OnClick"/>
+                        <telerik:RadRibbonButton x:Name="PositionsButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Workers-96.png" Size="Large" Text="Список посад" 
+								telerik:KeyTipService.AccessText="P" Click="PositionsButton_OnClick" />
+                        <telerik:RadRibbonButton x:Name="WorkBooksButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Courses-96.png" Size="Large" Text="Трудові книжки" 
+								telerik:KeyTipService.AccessText="B" Click="WorkBooksButton_OnClick"/>
+                        <telerik:RadRibbonButton x:Name="VacationButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Beach-96.png" Size="Large" Text="Графік відпусток" 
+								telerik:KeyTipService.AccessText="V" Click="VacationButton_Click" />
+                        <telerik:RadRibbonButton x:Name="ActivityButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Week View-96.png" Size="Large" Text="Діяльність працівників" 
+								telerik:KeyTipService.AccessText="A" Click="ActivityButton_Click" />
+                        <telerik:RadRibbonButton x:Name="StuffButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Conference-96.png" Size="Large" Text="Штат організації" 
+								telerik:KeyTipService.AccessText="S" Click="StuffButton_OnClick"/>
+                        
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Інформація" telerik:KeyTipService.AccessText="I">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="CalendarButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Calendar-100.png" Size="Large" Text="Виробничий календар"
+								telerik:KeyTipService.AccessText="C" Click="CalendarButton_Click"/>
+                        <telerik:RadRibbonButton x:Name="VacancyButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Cv.png" Size="Large" Text="Перегляд кандидатів"
+								telerik:KeyTipService.AccessText="V" Click="VacancyButton_Click"/>
+                        <telerik:RadRibbonButton x:Name="StatisticsButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Combo Chart-96.png" Size="Large" Text="Зведена статистика"
+								telerik:KeyTipService.AccessText="O" Click="StatisticsButton_Click" />
+                        <telerik:RadRibbonButton x:Name="StatisticsWorkerButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Positive Dynamic-96.png" Size="Large" Text="Статистика по працівнику"
+								telerik:KeyTipService.AccessText="W"  Click="StatisticsWorkerButton_OnClick"/>
+
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+
+                
+
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Звітність" telerik:KeyTipService.AccessText="R" >
+                <telerik:RadRibbonGroup Header="Звіти">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="ReportButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Reports.png" Size="Large" Text="Формування звітності"
+								telerik:KeyTipService.AccessText="S" Click="ReportButton_Click" />
+                        <telerik:RadRibbonButton x:Name="WorkerCardButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Employee Card-96.png" Size="Large" Text="Особова картка"
+								telerik:KeyTipService.AccessText="P"  Click="WorkerCardButton_OnClick"/>
+                    
+                    </telerik:RadCollapsiblePanel>
+                        </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Додатково" telerik:KeyTipService.AccessText="P" >
+                <telerik:RadRibbonGroup Header="Нагадування">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="BirthdayButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Birthday-100.png" Size="Large" Text="Дні народження"
+								telerik:KeyTipService.AccessText="B" Click="BirthdayButton_Click"/>
+                        <telerik:RadRibbonButton x:Name="TermButton" CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Overtime-100.png" Size="Large" Text="Закінчення випр. терміну"
+								telerik:KeyTipService.AccessText="T" Click="TermButton_Click"/>
+
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Довідник">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="LawButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Parliament-100.png" Size="Large" Text="Нормативна база"
+								telerik:KeyTipService.AccessText="L" Click="LawButton_Click"/>
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Архівування/експорт" telerik:KeyTipService.AccessText="A">
+                <telerik:RadRibbonGroup Header="Архівування бази даних">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="BackupButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Data Backup Filled-100.png" Size="Large" Text="Резервне копіювання"
+								telerik:KeyTipService.AccessText="B" Click="BackupButton_Click"/>
+                        <telerik:RadRibbonButton x:Name="RestoreButton" CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Data Restore-100.png" Size="Large" Text="Відновлення"
+								telerik:KeyTipService.AccessText="R" Click="RestoreButton_Click" />
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Експорт даних">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="CsvExportButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/CSV-100.png" Size="Large" Text="Експорт в CSV"
+								telerik:KeyTipService.AccessText="C" Click="CsvExportButton_Click"  />
+                        <telerik:RadRibbonButton x:Name="ExcelExportButton" CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/MS Excel-100.png" Size="Large" Text="Експорт в Excel"
+								telerik:KeyTipService.AccessText="E" Click="ExcelExportButton_Click" />
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Налаштування" telerik:KeyTipService.AccessText="S">
+                <telerik:RadRibbonGroup Header="Користувачі">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="EditLoginButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Edit User-100.png" Size="Large" Text="Налаштування користувачів"
+								telerik:KeyTipService.AccessText="E" Click="EditLoginButton_Click"/>
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Налаштування">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="SettingsButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Settings 3-96.png" Size="Large" Text="Налаштування з'єднання"
+								telerik:KeyTipService.AccessText="SC" Click="SettingsButton_Click" />
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+            <telerik:RadRibbonTab Header="Довідка" telerik:KeyTipService.AccessText="I" >
+                <telerik:RadRibbonGroup Header="Інформація">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="AboutButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/About-100.png" Size="Large" Text="Про програму"
+								telerik:KeyTipService.AccessText="A" Click="AboutButton_Click" />
+                    </telerik:RadCollapsiblePanel>
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="HelpButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Help-96.png" Size="Large" Text="Інструкція користувача"
+								telerik:KeyTipService.AccessText="A" Click="HelpButton_OnClick" />
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Зворотній зв'язок">
+                    <telerik:RadCollapsiblePanel>
+                        <telerik:RadRibbonButton x:Name="FeedbackButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Feedback-100.png" Size="Large" Text="Надіслати відгук"
+								telerik:KeyTipService.AccessText="F" Click="FeedbackButton_Click"/>
+                        <telerik:RadRibbonButton x:Name="BugReportButton"  CollapseToMedium="WhenGroupIsMedium"
+								LargeImage="Images/Bug-100.png" Size="Large" Text="Повідомити про помилку"
+								telerik:KeyTipService.AccessText="B" Click="BugReportButton_Click"/>
+                    </telerik:RadCollapsiblePanel>
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+        </telerik:RadRibbonView>
+        <Border>
+            <telerik:RadGridView Name="RadGridView" GroupRenderMode="Flat"
+								 ItemsSource="{Binding Employees}"
+								 CanUserFreezeColumns="True"
+								 RowDetailsVisibilityMode="VisibleWhenSelected"
+								 RowDetailsTemplate="{StaticResource EmployeeInfoRowDetailsTemplate}"
+								 AutoGenerateColumns="False"
+								 RowHeight="42"
+								 IsReadOnly="True"
+								 RowIndicatorVisibility="Collapsed" Margin="5,126,5,111" ShowGroupPanel="False">
+                <telerik:RadGridView.Columns>
+                    <telerik:GridViewImageColumn IsGroupable="False"
+												 IsSortable="False"
+												 DataMemberBinding="{Binding Data}"
+												 Width="50"
+                                                 Header="Зображення"
+												 ImageHeight="30" />
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" 
+												Header="Таб. номер"  Width="auto"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Surname}" 
+												Header="Прізвище"  Width="*"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" 
+												Header="Ім'я" Width="*"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding MiddleName}"  
+                                                Header="По-батькові" Width="*"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Position}" 
+                                                Header="Назва посади" Width="auto"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding DepartmentName}" 
+                                                Header="Підрозділ" Width="*"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding IsWork}" 
+                                                Header="Статус" Width="*"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding WorkPhone}" 
+                                                 Header="Робочий телефон" Width="auto"/>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding MobileNumber}" 
+												Header="Мобільний телефон" Width="auto" />
+                </telerik:RadGridView.Columns>
+            </telerik:RadGridView>
+        </Border>
+        <Border>
+            <GroupBox Header="Швидкий пошук" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Height="98" Width="274">
+                <Grid>
+                    <Button x:Name="AdvancedSearchButton"  HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="141" Height="24" ToolTip="Перейти до розширеного пошуку" Click="AdvancedSearchButton_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/Search-100.png" Width="20" Height="20"/>
+                            <TextBlock Text="Розширений пошук" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="NoWrap" Text="П.І.Б." VerticalAlignment="Top"/>
+                    <TextBox x:Name="QuickTextBox"  HorizontalAlignment="Left" Height="23" Margin="41,9,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="211" TextChanged="QuickTextBox_TextChanged"/>
+                    <Separator Name="Separator1" Width="261" Margin="10,32,10,29" RenderTransformOrigin="0.5,0.5" />
+
+
+                </Grid>
+            </GroupBox>
+
+        </Border>
+        <Border>
+            <GroupBox Header="Сортування" Margin="290,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="99" Width="166">
+                <Grid>
+                    <StackPanel Height="67" VerticalAlignment="Bottom">
+                        <RadioButton x:Name="OrderByRadioButton" Content="Табельний номер" Height="20" IsChecked="True" Checked="OrderByRadioButton_Checked"/>
+                        <RadioButton x:Name="OrderByRadioButton2" Content="Прізвище працівника" Height="20" Checked="OrderByRadioButton2_Checked"/>
+                        <RadioButton x:Name="OrderByRadioButton3" Content="Підрозділ" Height="20" Checked="OrderByRadioButton3_Checked"/>
+                    </StackPanel>
+
+                </Grid>
+            </GroupBox>
+
+        </Border>
+        <Border>
+            <GroupBox Margin="461,0,0,10" Header="Фільтрування" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="100" Width="106" >
+                <Grid>
+                    <StackPanel Margin="0,10,0,6" >
+                        <CheckBox Content="Працюючі" x:Name="WorkingCheckBox" Checked="WorkingCheckBox_Checked" Unchecked="WorkingCheckBox_Unchecked" Height="20"/>
+                        <CheckBox Content="Звільнені" x:Name="NotWorkingCheckBox" Checked="NotWorkingCheckBox_Checked" Unchecked="NotWorkingCheckBox_Unchecked" />
+                         
+
+                    </StackPanel>
+                    </Grid>
+            </GroupBox>
+        </Border>
+    </Grid>
+
+</Window>
+
